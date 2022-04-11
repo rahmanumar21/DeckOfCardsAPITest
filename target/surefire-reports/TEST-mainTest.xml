@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="mainTest" time="8.125" tests="7" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/arahman/IdeaProjects/deckofcardsapi_v3/target/test-classes:/Users/arahman/IdeaProjects/deckofcardsapi_v3/target/classes:/Users/arahman/.m2/repository/io/rest-assured/rest-assured/5.0.1/rest-assured-5.0.1.jar:/Users/arahman/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/arahman/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/arahman/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/arahman/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/arahman/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/arahman/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/arahman/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/arahman/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/arahman/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/arahman/.m2/repository/io/rest-assured/json-path/5.0.1/json-path-5.0.1.jar:/Users/arahman/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/arahman/.m2/repository/io/rest-assured/rest-assured-common/5.0.1/rest-assured-common-5.0.1.jar:/Users/arahman/.m2/repository/io/rest-assured/xml-path/5.0.1/xml-path-5.0.1.jar:/Users/arahman/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/arahman/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/arahman/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/arahman/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/arahman/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/arahman/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar:/Users/arahman/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/arahman/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/arahman/IdeaProjects/deckofcardsapi_v3/target/surefire/surefirebooter585560961811313095.jar /Users/arahman/IdeaProjects/deckofcardsapi_v3/target/surefire 2022-04-11T22-20-45_681-jvmRun1 surefire2922913249722021975tmp surefire_014819945036860929992tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/arahman/IdeaProjects/deckofcardsapi_v3/target/test-classes:/Users/arahman/IdeaProjects/deckofcardsapi_v3/target/classes:/Users/arahman/.m2/repository/io/rest-assured/rest-assured/5.0.1/rest-assured-5.0.1.jar:/Users/arahman/.m2/repository/org/apache/groovy/groovy/4.0.1/groovy-4.0.1.jar:/Users/arahman/.m2/repository/org/apache/groovy/groovy-xml/4.0.1/groovy-xml-4.0.1.jar:/Users/arahman/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/arahman/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/arahman/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/arahman/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/arahman/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/arahman/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/arahman/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/arahman/.m2/repository/io/rest-assured/json-path/5.0.1/json-path-5.0.1.jar:/Users/arahman/.m2/repository/org/apache/groovy/groovy-json/4.0.1/groovy-json-4.0.1.jar:/Users/arahman/.m2/repository/io/rest-assured/rest-assured-common/5.0.1/rest-assured-common-5.0.1.jar:/Users/arahman/.m2/repository/io/rest-assured/xml-path/5.0.1/xml-path-5.0.1.jar:/Users/arahman/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/arahman/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/arahman/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/arahman/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/arahman/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/arahman/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar:/Users/arahman/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Users/arahman/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/arahman"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.0.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/arahman/IdeaProjects/deckofcardsapi_v3"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/arahman/IdeaProjects/deckofcardsapi_v3/target/surefire/surefirebooter585560961811313095.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.1+12-LTS-39"/>
+    <property name="user.name" value="arahman"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.2.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/arahman/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/8l/dcd4x9zd6zn61htz31twdfp40000gn/T/"/>
+    <property name="idea.version" value="2021.3.3"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="user.dir" value="/Users/arahman/IdeaProjects/deckofcardsapi_v3"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/arahman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.1+12-LTS-39"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testGetTime" classname="mainTest" time="3.62">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://deckofcardsapi.com/api/deck/new/draw/?count=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 11 Apr 2022 20:20:53 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Frame-Options: DENY
+Vary: Origin
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=h5%2BSqnmvcfpGwEc4AZab9ct5iu39LKBclRgQIbpJPYOJTlLjyJKJmq0LMccBUkmXJLuELa7Bmykht3%2FmCmik2%2B0yn6ObERCbkzjaP4%2FU0pTkc5PEwoqum0CA%2FT9Vf1py2EVxoNk%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6fa66ce6d817ffb8-WAW
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "deck_id": "41jpckparwgw",
+    "cards": [
+        {
+            "code": "4D",
+            "image": "https://deckofcardsapi.com/static/img/4D.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/4D.svg",
+                "png": "https://deckofcardsapi.com/static/img/4D.png"
+            },
+            "value": "4",
+            "suit": "DIAMONDS"
+        },
+        {
+            "code": "JD",
+            "image": "https://deckofcardsapi.com/static/img/JD.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/JD.svg",
+                "png": "https://deckofcardsapi.com/static/img/JD.png"
+            },
+            "value": "JACK",
+            "suit": "DIAMONDS"
+        }
+    ],
+    "remaining": 50
+}
+===== Status and Time Execution =====
+Total time execution : 2572
+Time execution status is Bad with 2572
+]]></system-out>
+  </testcase>
+  <testcase name="testStatusCode" classname="mainTest" time="0.402">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://deckofcardsapi.com/api/deck/new/draw/?count=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 11 Apr 2022 20:20:53 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Frame-Options: DENY
+Vary: Origin
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=i51XPYY8UWBApswF25G2zawJzfMXcKodXc9Y0aafEUW3DSIHmzPqbuWk9gQHM%2FCIAKW0F4QyiioWjAfiBN1zePyZ2SHiBXax8AhnoP2X2%2FYC0LVNzsftiI2RCzZhbaaR3YakduE%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6fa66ceb58090043-WAW
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "deck_id": "crgxpubkcyp0",
+    "cards": [
+        {
+            "code": "KH",
+            "image": "https://deckofcardsapi.com/static/img/KH.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/KH.svg",
+                "png": "https://deckofcardsapi.com/static/img/KH.png"
+            },
+            "value": "KING",
+            "suit": "HEARTS"
+        },
+        {
+            "code": "2C",
+            "image": "https://deckofcardsapi.com/static/img/2C.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/2C.svg",
+                "png": "https://deckofcardsapi.com/static/img/2C.png"
+            },
+            "value": "2",
+            "suit": "CLUBS"
+        }
+    ],
+    "remaining": 50
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetTotalData" classname="mainTest" time="1.574">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://deckofcardsapi.com/api/deck/new/draw/?count=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 11 Apr 2022 20:20:54 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Frame-Options: DENY
+Vary: Origin
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4jPXzqcsgESL0Qrc1DGO2KcTAUQ50P%2BoqIDZwF3k96pfQbTGFf5clTC97ZAic5%2F5muzZBfqZ538quhdbLCwq85vOUkhHF2ezX7Dru8UZMJaHLBpwQKZh4xXecfshVYa50lkWkqQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6fa66cee0fa4502b-WAW
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "deck_id": "3swsbntru1w3",
+    "cards": [
+        {
+            "code": "6H",
+            "image": "https://deckofcardsapi.com/static/img/6H.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/6H.svg",
+                "png": "https://deckofcardsapi.com/static/img/6H.png"
+            },
+            "value": "6",
+            "suit": "HEARTS"
+        },
+        {
+            "code": "AC",
+            "image": "https://deckofcardsapi.com/static/img/AC.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/AC.svg",
+                "png": "https://deckofcardsapi.com/static/img/AC.png"
+            },
+            "value": "ACE",
+            "suit": "CLUBS"
+        }
+    ],
+    "remaining": 50
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetTotalCards" classname="mainTest" time="0.391">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://deckofcardsapi.com/api/deck/bv43wewgkl6s/draw/?count=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 11 Apr 2022 20:20:55 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Frame-Options: DENY
+Vary: Origin
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JtSb73VgZQ5p6RU3HH%2BsoJ7iQgZpJPWeBRhPfSJXBTsMWRqgRRdgM2FruDBNy%2FapjyiKsn9q4fetp7UFu1jPe3ak1OldcNQZwr5E9cchzqrxHSo2N0iftERnCpzsNLhe9eI34lg%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6fa66cf809ea0043-WAW
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "deck_id": "bv43wewgkl6s",
+    "cards": [
+        {
+            "code": "QS",
+            "image": "https://deckofcardsapi.com/static/img/QS.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/QS.svg",
+                "png": "https://deckofcardsapi.com/static/img/QS.png"
+            },
+            "value": "QUEEN",
+            "suit": "SPADES"
+        },
+        {
+            "code": "2H",
+            "image": "https://deckofcardsapi.com/static/img/2H.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/2H.svg",
+                "png": "https://deckofcardsapi.com/static/img/2H.png"
+            },
+            "value": "2",
+            "suit": "HEARTS"
+        }
+    ],
+    "remaining": 14
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetDeckID" classname="mainTest" time="0.623">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://deckofcardsapi.com/api/deck/bv43wewgkl6s/draw/?count=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 11 Apr 2022 20:20:56 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Frame-Options: DENY
+Vary: Origin
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LrAPBg77iRoJexbfDEzHK%2FqGaQ4dQlVA40fAQVdev3sMtwMkgoyYaHIEqvZ5T%2FDlmOp%2BlgVBmi9ImBifjOMT7yIaPBO9vwTX6bUgl%2BsvhzjKC%2F0Ci2prtqgXA46wys3%2FvnBJNWQ%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6fa66cfa2aaf162a-WAW
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "deck_id": "bv43wewgkl6s",
+    "cards": [
+        {
+            "code": "KD",
+            "image": "https://deckofcardsapi.com/static/img/KD.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/KD.svg",
+                "png": "https://deckofcardsapi.com/static/img/KD.png"
+            },
+            "value": "KING",
+            "suit": "DIAMONDS"
+        },
+        {
+            "code": "3S",
+            "image": "https://deckofcardsapi.com/static/img/3S.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/3S.svg",
+                "png": "https://deckofcardsapi.com/static/img/3S.png"
+            },
+            "value": "3",
+            "suit": "SPADES"
+        }
+    ],
+    "remaining": 12
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetHeader" classname="mainTest" time="0.475">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://deckofcardsapi.com/api/deck/new/draw/?count=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 11 Apr 2022 20:20:56 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Frame-Options: DENY
+Vary: Origin
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SkRwbZYl1z%2Bs7WwKL3oHWG9knKPvjrEOSByOksdATzfUnaMME72LSY%2Bf5t4ZxzTfZKZCvq8vrDeX4i9i7NfvhLv5GYY%2B2D2W7gGgPA3LYMddbup8frQ9XxW7rsXfbQz8o9WKxNs%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6fa66cff485ccca3-WAW
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "deck_id": "xmita5b8opet",
+    "cards": [
+        {
+            "code": "7H",
+            "image": "https://deckofcardsapi.com/static/img/7H.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/7H.svg",
+                "png": "https://deckofcardsapi.com/static/img/7H.png"
+            },
+            "value": "7",
+            "suit": "HEARTS"
+        },
+        {
+            "code": "6H",
+            "image": "https://deckofcardsapi.com/static/img/6H.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/6H.svg",
+                "png": "https://deckofcardsapi.com/static/img/6H.png"
+            },
+            "value": "6",
+            "suit": "HEARTS"
+        }
+    ],
+    "remaining": 50
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetRemaining" classname="mainTest" time="0.418">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://deckofcardsapi.com/api/deck/new/draw/?count=2
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Mon, 11 Apr 2022 20:20:57 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+X-Content-Type-Options: nosniff
+Referrer-Policy: same-origin
+X-Frame-Options: DENY
+Vary: Origin
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=yiU95xfMdWxpdCAiCcwoTi07uKboiZD5qiDhOZgYZ1cynMIPGzwfih3OKdSrSY0fPqk2oyULuw3nbJUGB33MGEDim%2FARMwgj5iOhwT1Hx42ox0CApLCv749lumrwhCa9v7MU1h8%3D"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 6fa66d0139d20063-WAW
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "success": true,
+    "deck_id": "63cnxqschbmp",
+    "cards": [
+        {
+            "code": "0C",
+            "image": "https://deckofcardsapi.com/static/img/0C.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/0C.svg",
+                "png": "https://deckofcardsapi.com/static/img/0C.png"
+            },
+            "value": "10",
+            "suit": "CLUBS"
+        },
+        {
+            "code": "9S",
+            "image": "https://deckofcardsapi.com/static/img/9S.png",
+            "images": {
+                "svg": "https://deckofcardsapi.com/static/img/9S.svg",
+                "png": "https://deckofcardsapi.com/static/img/9S.png"
+            },
+            "value": "9",
+            "suit": "SPADES"
+        }
+    ],
+    "remaining": 50
+}
+]]></system-out>
+  </testcase>
+</testsuite>
